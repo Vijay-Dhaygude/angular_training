@@ -1,0 +1,170 @@
+NodeJS 
+
+NPM (Node Package Manager)  -----> CLI
+                            -----> Install / Uninstall Dependencies
+
+
+            Bootstrap            ------> Optional
+            jquery
+
+            typescript           ------> S/W kind of dependencies
+            angular
+
+
+  1) Local Installation
+
+			npm install bootstrap
+			npm install bootstrap@4 
+
+
+  2) Global Installation
+			npm install -g typescript
+			npm install -g @angular/cli@16
+
+  
+   Transpiler ===> Source (.ts) to Source(.js) compiler (Typescript compiler)
+
+
+   Module ( external TS File ) 
+   Bootstrap File (.ts)
+
+   tsconfig.json ====> Typescript configuration file
+
+          tsc --init
+
+
+    Data Binding
+                1) One way DB
+			     a) Interpolation        (Component to View)
+			     b) Property Binding     (Component to View)
+			     c) Event Binding        (View to Component)
+		
+		2) Two way DB   -> (Component to View) , (View to Component)	
+					ngModel 
+					formsModule , import in app.module.ts
+
+   
+   Component to Component Interaction 
+   
+   1) Parent to Child interaction
+   2) Child to Parent interaction
+
+
+
+
+    person = {
+		pid:101,
+                pname:"Rohit"
+	     }
+			   
+
+    Directive 
+              1) Component  : Directive with Template
+	      2) Structural : *ngFor, *ngIf, *ngSwitchCase
+	      3) Attribute  : ngStyle, ngClass
+
+	      Custom Directive : Created by User
+
+              @HostListener
+              @HostBinding
+
+
+   Service
+	  
+   Pipe  
+
+           1) Inbuilt             (date,slice,uppecase,json.....)
+           2) Custom pipe
+
+
+   Observable 
+   Observer
+			subscribe()
+			            Next (mandatory)
+				    Error (optional)
+				    complete(optional)
+
+	
+   RxJS library 
+                operators / functions
+                of, from, interval......
+   		return type : Observable object
+
+
+   HttpClientModule 
+                   HttpClient 
+				get(), post(), put(), delete()
+
+
+    Form
+            1) Template Driven Form
+			           Simple form
+				   Apply Data Binding 
+                                   validations can be handled on template side 
+				   Directives (ngModel , ngForm, ngModelGroup )
+				   FormGroup, FormControl  (instances are created on view )
+
+            2) Model Driven Form / Reactive form
+				   Complex form
+				   Apply Data Binding / mapping
+				   validations can be handled on Model / class side 
+				   attributes : formGroup, formControlName, formGroupName
+                                   FormGroup, FormControl : (instances are created on Model ) 
+
+
+    Routing
+              Default route
+              Wildcard route 
+              Parameterised route
+              Nested route
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
